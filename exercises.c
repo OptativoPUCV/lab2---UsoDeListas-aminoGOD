@@ -118,7 +118,6 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-#include "stack.h"
 
 int parentesisBalanceados(char *cadena) {
     Stack *pila = create_stack();

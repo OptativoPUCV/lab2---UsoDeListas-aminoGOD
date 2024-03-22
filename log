@@ -181,3 +181,14 @@ exercises.c:135:41: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 88951a8
+Fri 22 Mar 2024 08:04:21 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:134:41: error: comparison between pointer and integer [-Werror]
+  134 |             if (pila_vacia || pop(pila) != '(') {
+      |                                         ^~
+cc1: all warnings being treated as errors
+Compilation failed
+923e848
