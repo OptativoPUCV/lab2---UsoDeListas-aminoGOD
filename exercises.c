@@ -91,17 +91,18 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack *P1, Stack *P2) {
+void copia_pila(Stack *P1, Stack *P2){ 
   Stack *aux = create_stack();
   while(!isEmpty(P1)){
     push(aux, pop(P1));
   }
+  
   while(!isEmpty(aux){
     push(P2, pop(aux));
-  }
-  
-}
+    }
 
+}
+}
 /*
 Ejercicio 5.
 La función verifica si la cadena de entrada tiene sus

@@ -71,3 +71,25 @@ exercises.c:103:1: error: expected expression before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 ef7ab5f
+Fri 22 Mar 2024 07:42:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:10: error: implicit declaration of function ‘isEmpty’ [-Werror=implicit-function-declaration]
+   96 |   while(!isEmpty(P1)){
+      |          ^~~~~~~
+exercises.c:100:22: error: expected ‘)’ before ‘{’ token
+  100 |   while(!isEmpty(aux){
+      |        ~             ^
+      |                      )
+exercises.c:104:1: error: expected expression before ‘}’ token
+  104 | }
+      | ^
+exercises.c: At top level:
+exercises.c:105:1: error: expected identifier or ‘(’ before ‘}’ token
+  105 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+570850d
