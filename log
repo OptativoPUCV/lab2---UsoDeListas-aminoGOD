@@ -53,3 +53,21 @@ exercises.c:96:10: error: implicit declaration of function ‘is_empty’ [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 985142e
+Fri 22 Mar 2024 07:40:28 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:10: error: implicit declaration of function ‘isEmpty’ [-Werror=implicit-function-declaration]
+   96 |   while(!isEmpty(P1)){
+      |          ^~~~~~~
+exercises.c:99:22: error: expected ‘)’ before ‘{’ token
+   99 |   while(!isEmpty(aux){
+      |        ~             ^
+      |                      )
+exercises.c:103:1: error: expected expression before ‘}’ token
+  103 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ef7ab5f
