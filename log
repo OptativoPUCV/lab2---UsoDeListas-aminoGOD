@@ -42,3 +42,14 @@ total_score: 20/70
  tests:  0|3
 total_score: 20/70
 83df71a
+Fri 22 Mar 2024 07:39:28 PM UTC: 
+ exercises.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:10: error: implicit declaration of function ‘is_empty’ [-Werror=implicit-function-declaration]
+   96 |   while(!is_empty(P1)){
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+985142e
