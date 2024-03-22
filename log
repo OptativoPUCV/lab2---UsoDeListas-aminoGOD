@@ -136,3 +136,14 @@ exercises.c:103:3: error: implicit declaration of function ‘destroyStack’ [-
 cc1: all warnings being treated as errors
 Compilation failed
 f07325f
+Fri 22 Mar 2024 07:45:18 PM UTC: 
+ exercises.c | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:102:10: error: implicit declaration of function ‘isEmpty’ [-Werror=implicit-function-declaration]
+  102 |   while(!isEmpty(P1)){
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cf94a02
