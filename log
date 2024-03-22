@@ -153,3 +153,20 @@ Fri 22 Mar 2024 07:46:15 PM UTC:
  tests:  3|2
 total_score: 40/70
 41bc5d9
+Fri 22 Mar 2024 07:55:17 PM UTC: 
+ exercises.c | 25 ++++++++++++++++++++++++-
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:128:14: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  128 |       if(pila->top == NULL){
+      |              ^~
+exercises.c:135:10: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  135 |   if(pila->top == NULL){
+      |          ^~
+exercises.c:143:1: error: control reaches end of non-void function [-Werror=return-type]
+  143 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a3febf2
