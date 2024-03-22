@@ -170,3 +170,14 @@ exercises.c:143:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 a3febf2
+Fri 22 Mar 2024 07:59:17 PM UTC: 
+ exercises.c | 33 ++++++++++++++++++++-------------
+ 1 file changed, 20 insertions(+), 13 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:41: error: comparison between pointer and integer [-Werror]
+  135 |             if (pila_vacia || pop(pila) != '(') {
+      |                                         ^~
+cc1: all warnings being treated as errors
+Compilation failed
+88951a8
