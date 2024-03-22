@@ -102,7 +102,7 @@ void copia_pila(Stack *P1, Stack *P2){
     }
 
 }
-}
+
 /*
 Ejercicio 5.
 La función verifica si la cadena de entrada tiene sus
