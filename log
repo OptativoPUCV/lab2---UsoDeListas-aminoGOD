@@ -22,3 +22,14 @@ Thu 21 Mar 2024 11:38:50 PM UTC:
  tests:  2|3
 total_score: 20/70
 34d2e74
+Fri 22 Mar 2024 12:20:14 PM UTC: 
+ exercises.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+test.c: In function ‘test_elimina_elemento’:
+test.c:132:5: error: implicit declaration of function ‘eliminaElementos’; did you mean ‘test_elimina_elemento’? [-Werror=implicit-function-declaration]
+  132 |     eliminaElementos(L, elem);
+      |     ^~~~~~~~~~~~~~~~
+      |     test_elimina_elemento
+cc1: all warnings being treated as errors
+Compilation failed
+a20cf20
