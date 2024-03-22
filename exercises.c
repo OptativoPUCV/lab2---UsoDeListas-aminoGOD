@@ -100,7 +100,7 @@ void copia_pila(Stack *P1, Stack *P2){
   while(!isEmpty(aux)){
     push(P2, pop(aux));
     }
-
+  destroyStack(aux);
 }
 
 /*

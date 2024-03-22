@@ -122,3 +122,17 @@ exercises.c:96:10: error: implicit declaration of function ‘isEmpty’ [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 6bb5b5b
+Fri 22 Mar 2024 07:44:43 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:10: error: implicit declaration of function ‘isEmpty’ [-Werror=implicit-function-declaration]
+   96 |   while(!isEmpty(P1)){
+      |          ^~~~~~~
+exercises.c:103:3: error: implicit declaration of function ‘destroyStack’ [-Werror=implicit-function-declaration]
+  103 |   destroyStack(aux);
+      |   ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f07325f
