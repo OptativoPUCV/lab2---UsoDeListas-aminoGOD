@@ -97,24 +97,27 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack *P1, Stack *P2) {
-  Stack *P3 = create_stack();
-  if(P3 == NULL){
-    
-    return;
-  }
-  void *dato;
-  while ((dato = pop(P1)) != NULL) {
-    push(P3, dato);
-  }
+void copia_pila(Stack* P1, Stack* P2) {
 
-  while ((dato = pop(P3)) != NULL) {
-    push(P2, dato);
-  }
+    Stack* aux = create_stack();
+    if (aux == NULL) {
+        fprintf(stderr, "Failed to create auxiliary stack\n");
+        exit(EXIT_FAILURE);
+    }
 
 
-  free(P3);
-  }
+    while (top(P1) != 0) {
+        void* elemento = pop(P1);
+        push(aux, elemento);
+    }
+
+    while (top(aux) != 0) {
+        void* elemento = pop(aux);
+        push(P1, elemento); 
+        push(P2, elemento);
+}
+
+}
 /*
 Ejercicio 5.
 La función verifica si la cadena de entrada tiene sus
